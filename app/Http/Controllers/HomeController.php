@@ -109,7 +109,7 @@ class HomeController extends Controller
      *  return [
      *      'title' => 'required|string',
      *      'publication_date' => 'required|date',
-     *      'author_id' => 'required|exists:author,',
+     *      'author_id' => 'required|exists:author,id',
      *      'description' => 'required',
      *      'pages' => 'required|integer'
      *  ];

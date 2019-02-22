@@ -14,6 +14,21 @@
                 <div class="card-header">Add Book</div>
 
                 <div class="card-body">
+                    <?php
+                    /*
+                        Add Error message handling when validation fails
+                        Example:
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                     <li>{{$error}}</li>
+                                    @endforeach
+                                </ul>
+
+                        @endif
+                    */
+                    ?>
                     <form method="post">
                         @csrf
                         <div class="form-group">

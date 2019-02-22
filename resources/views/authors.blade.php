@@ -14,6 +14,21 @@
                 <div class="card-header">Add Author</div>
 
                 <div class="card-body">
+                    <?php
+                    /*
+                        Add Error message handling when validation fails
+                        Example:
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                     <li>{{$error}}</li>
+                                    @endforeach
+                                </ul>
+
+                        @endif
+                    */
+                    ?>
                     <form method="post">
                         @csrf
                         <div class="form-group">
@@ -56,6 +71,12 @@
                                 <td>{{ $author->birthday }}</td>
                                 <td>{{ $author->books->count() }}</td>
                                 <td>{{ $author->biography }}</td>
+                                <?php
+                                /*
+                                    better option for generating this url
+                                    <td><a href="{{ action'HomeController@deleteAuthor, [$author->id] }}">Delete Author</a></td>
+                                */
+                                ?>
                                 <td><a href="/authors/delete/{{ $author->id }}">Delete Author</a></td>
                             </tr>
                             @endforeach
