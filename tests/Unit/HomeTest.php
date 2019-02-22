@@ -6,7 +6,7 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 
-class AuthorTest extends TestCase
+class HomeTest extends TestCase
 {
     use RefreshDatabase;
 

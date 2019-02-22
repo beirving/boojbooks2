@@ -16,7 +16,7 @@ class BookTest extends TestCase
         $newBook = factory(Book::class)->create([
             'title' => 'Storm Front',
             'publication_date' => '2000-04-01',
-            'description' => 'Harry Desden must save Chicago and I guess the rest of the world'),
+            'description' => 'Harry Desden must save Chicago and I guess the rest of the world',
             'pages' => '322',
             'author_id' => 1
         ]);
