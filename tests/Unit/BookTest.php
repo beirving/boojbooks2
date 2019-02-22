@@ -2,7 +2,9 @@
 
 namespace Test\Unit;
 
+use App\Book;
 use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 
